@@ -1,0 +1,25 @@
+Usage of the tool
+
+Prerequisites:
+
+-AWS user account with Access Key and Secret Key.
+ Required permissions in AWS: 
+	route53:ListResourceRecordSets
+	route53:ChangeResourceRecordSets
+	route53:GetChange
+
+-AWS CLI installed on client and configured both for the user and for root (if applicable)
+
+-update the config file as appropriate (the config file should be in the same directory as the script)
+
+-the raw json file with the place holders should be placed in the same directory as the script
+ Place holders needed:
+	*comment*
+	*domain*
+	*newip*	
+
+-the log file is kept in the same direcotry as the script (use the config file to specify the file name)
+
+-when stting up the job in crontab use the bash -lc prefix otherwise the job will not be able to use the command 'aws'
+ example entry in crontab (executed every 15 minutes)
+ */15 * * * * bash -lc /home/youruser/aws_ddns/aws_ddns_update.sh

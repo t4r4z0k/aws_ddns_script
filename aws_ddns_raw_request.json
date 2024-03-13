@@ -1,0 +1,18 @@
+{
+    "Comment": *comment*,
+    "Changes": [
+        {
+            "Action": "UPSERT",
+            "ResourceRecordSet": {
+                "Name": *domain*,
+                "Type": "A",
+                "TTL": 60,
+                "ResourceRecords": [
+                    {
+                        "Value": *newip*
+                    }
+                ]
+            }
+        }
+    ]
+}

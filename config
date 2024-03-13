@@ -1,0 +1,8 @@
+LogFile="ddns_log"
+JsonRawFile="raw_request.json"
+JsonOutFile="update.json"
+AwsZoneId=""
+DomainName=""
+UpdTxt=""
+MsgStart="----------START----------"
+MsgEnd="-----------END-----------"
