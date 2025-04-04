@@ -20,6 +20,6 @@ Prerequisites:
 
 -the log file is kept in the same direcotry as the script (use the config file to specify the file name)
 
--when stting up the job in crontab use the bash -lc prefix otherwise the job will not be able to use the command 'aws'
+-when setting up the job in crontab use the bash -lc prefix otherwise the job will not be able to use the command 'aws'
  example entry in crontab (executed every 15 minutes)
  */15 * * * * bash -lc /home/youruser/aws_ddns/aws_ddns_update.sh
